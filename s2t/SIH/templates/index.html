@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Recognition and Language Selection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="input-group mb-3 search-bar">
+            <input type="text" class="form-control" id="searchInput" placeholder="Speak or type here">
+            <div class="input-group-append">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown" id="languageOptions">
+                        <a class="dropdown-item" href="#" data-lang="en-IN">English</a>
+                        <a class="dropdown-item" href="#" data-lang="ta-IN">Tamil</a>
+                        <a class="dropdown-item" href="#" data-lang="ml-IN">Malayalam</a>
+                        <a class="dropdown-item" href="#" data-lang="hi-IN">Hindi</a>
+                    </div>
+                </div>
+                <span class="input-group-text mic-icon" id="micButton">
+                    <i class="fas fa-microphone"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+

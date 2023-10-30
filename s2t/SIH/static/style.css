@@ -1,0 +1,53 @@
+/* Additional styling for the microphone icon when recording */
+#micIcon.recording {
+    animation: pulse 1s infinite;
+}
+
+.recording-status {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#micButton:focus + .recording-status {
+    display: block;
+}
+
+/* Animation for the microphone icon */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aesthetic styles for hover-based dropdown */
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.dropdown-item {
+    color: #333;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f2f2f2;
+    color: #333;
+} */
+
+
